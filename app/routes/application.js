@@ -1,14 +1,16 @@
 import Ember from 'ember';
 
-const { Route } = Ember;
+let { Route, inject: { service } } = Ember;
 
 export default Route.extend({
+  session: service(),
 
- actions: {
+  actions: {
 
-    signIn(email, password, provider='password') {
+    signOut(email, password, provider='password') {
       this.get('session').authenticate('authenticator:torii', provider, { email, password })
     }
+
   }
 
 });

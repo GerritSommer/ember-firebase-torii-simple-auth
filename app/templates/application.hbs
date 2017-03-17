@@ -1,1 +1,11 @@
+{{#if session.isAuthenticated}}
+  <button {{action 'signOut'}}>
+    Sign out
+  </button>
+{{else}}
+  {{#link-to 'login'}}
+    login
+  {{/link-to}}
+{{/if}}
+
 {{outlet}}
