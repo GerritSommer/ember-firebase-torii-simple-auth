@@ -33,13 +33,16 @@ module.exports = function(environment) {
       messagingSenderId:  '[PLACE YOUR CONFIG HERE]',
     },
 
-    // 'ember-simple-auth': {
-    //   // routeAfterAuthentication: 'application',
-    //   authenticationRoute:      'login'
-    // },
-    //
+    'ember-simple-auth': {
+      routeAfterAuthentication: 'application',
+      authenticationRoute:      'login'
+    },
+
     torii: {
-      sessionServiceName: 'session'
+      sessionServiceName: 'session',
+      providers: {
+        password: {}
+      }
     },
 
 
