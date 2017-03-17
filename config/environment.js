@@ -4,7 +4,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'contacts',
+    modulePrefix: 'firebase-login',
     environment:  environment,
     rootURL:      '/',
     locationType: 'auto',
@@ -30,7 +30,7 @@ module.exports = function(environment) {
       authDomain:         '[PLACE YOUR CONFIG HERE]',
       databaseURL:        '[PLACE YOUR CONFIG HERE]',
       storageBucket:      '[PLACE YOUR CONFIG HERE]',
-      messagingSenderId:  '[PLACE YOUR CONFIG HERE]',
+      messagingSenderId:  '[PLACE YOUR CONFIG HERE]'
     },
 
     'ember-simple-auth': {
